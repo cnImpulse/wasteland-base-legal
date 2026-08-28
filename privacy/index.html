@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="《我的末世废土基地》隐私政策" />
+    <title>隐私政策｜我的末世废土基地</title>
+    <link rel="stylesheet" href="../assets/legal.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../">我的末世废土基地</a>
+        <nav class="nav" aria-label="协议导航">
+          <a href="../terms/">用户协议</a>
+          <a aria-current="page" href="./">隐私政策</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="document">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>《我的末世废土基地》隐私政策</h1>
+      <div class="meta">
+        <span>更新日期：2026 年 8 月 29 日</span>
+        <span>生效日期：2026 年 8 月 29 日</span>
+        <span>版本：1.0</span>
+      </div>
+
+      <div class="notice">
+        <strong>摘要：</strong>游戏进度主要保存在您的设备本地；中国大陆 Android 测试包在您同意本政策后使用 TapSDK 完成登录、实名认证/防沉迷和更新检查；腾讯 RUM 错误诊断需要您另行选择同意，拒绝不会影响进入游戏。当前测试包未接入广告 SDK 或真实支付。
+      </div>
+
+      <p>
+        拾一工作室（以下简称“我们”）是《我的末世废土基地》的运营者。我们重视您的个人信息和隐私安全。本政策说明我们在您参与游戏封闭测试期间如何处理个人信息，以及您如何行使相关权利。
+      </p>
+
+      <div class="summary-grid">
+        <section class="summary-card">
+          <h3>本地优先</h3>
+          <p>游戏存档、本地设备标识和同意记录保存在设备内，不由游戏业务上传至我们的服务器。</p>
+        </section>
+        <section class="summary-card">
+          <h3>最小登录范围</h3>
+          <p>TapTap 登录仅申请 basic_info 范围，用于获得账号基础标识并启动合规认证。</p>
+        </section>
+        <section class="summary-card">
+          <h3>诊断另行同意</h3>
+          <p>远程错误诊断为可选功能，不同意时使用本地游戏不受影响。</p>
+        </section>
+        <section class="summary-card">
+          <h3>当前无广告 SDK</h3>
+          <p>本次封闭测试未接入第三方广告 SDK，也不提供真实货币购买功能。</p>
+        </section>
+      </div>
+
+      <h2>一、适用范围与处理原则</h2>
+      <p>
+        本政策适用于《我的末世废土基地》封闭测试版本及其公开协议页面。我们遵循合法、正当、必要、诚信和最小化原则，仅在实现明确功能所必需的范围内处理信息。
+      </p>
+      <p>
+        本政策不适用于由第三方独立提供并直接控制的产品或服务。我们会在本政策中列明当前接入的第三方 SDK，并提供其隐私文件链接。
+      </p>
+
+      <h2>二、我们如何收集和使用信息</h2>
+
+      <h3>2.1 本地游戏数据</h3>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>信息</th>
+              <th>用途</th>
+              <th>保存方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>游戏进度、角色、物品、基地、设置及存档恢复信息</td>
+              <td>保存和恢复游戏进度</td>
+              <td>设备本地 IndexedDB；不由游戏业务上传</td>
+            </tr>
+            <tr>
+              <td>随机生成的本地设备标识</td>
+              <td>区分同一设备上的本地存档来源和恢复记录</td>
+              <td>设备本地；不是 AndroidID、IMEI、手机号或广告标识</td>
+            </tr>
+            <tr>
+              <td>隐私政策同意状态、可选诊断同意状态</td>
+              <td>记住您的选择，并在撤回后停止相应功能</td>
+              <td>设备本地 IndexedDB；必要时使用本地存储作为拒绝状态的容错记录</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        您可以通过卸载应用或在系统设置中清除应用数据来删除上述本地信息；该操作通常无法恢复，请谨慎处理。
+      </p>
+
+      <h3>2.2 TapTap 登录、实名认证/防沉迷与更新</h3>
+      <p>
+        在中国大陆 Android 测试包中，您同意本政策后，我们才会初始化 TapSDK。当前接入 TapSDK Core、登录、合规认证和更新唤起模块，登录仅申请 <code>basic_info</code> 范围。
+      </p>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>场景</th>
+              <th>可能处理的信息或权限</th>
+              <th>目的</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TapTap 登录</td>
+              <td>openId、unionId；系统版本、设备型号、CPU、内存、网络类型、AndroidID、网络权限</td>
+              <td>使用 TapTap 账号登录并保障 SDK 兼容、定位问题</td>
+            </tr>
+            <tr>
+              <td>实名认证与防沉迷</td>
+              <td><strong>TapTap 账号实名状态及合规结果</strong>、openId、系统与网络基本信息、网络状态</td>
+              <td>依法完成实名认证，执行年龄、时段和时长限制</td>
+            </tr>
+            <tr>
+              <td>更新检查与唤起</td>
+              <td>系统与设备基本信息、网络类型、AndroidID、设备内存、是否安装 TapTap 客户端、网络权限、安装应用权限</td>
+              <td>检查强制更新、唤起 TapTap 或完成经您确认的安装/更新流程</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        游戏原生桥接仅临时读取 openId 以启动合规认证，不会将 TapTap Access Token、openId 或 unionId 传入游戏 WebView、普通游戏存档或诊断日志。我们只根据 TapTap 返回的“允许进入”或受限原因执行游戏准入，不获取或保存您的真实姓名和身份证号码。
+      </p>
+      <p>
+        TapSDK 由易玩（上海）网络科技有限公司提供。TapTap 对上述信息的独立处理规则请见
+        <a href="https://developer.taptap.cn/docs/sdk/start/agreement/" rel="noopener noreferrer">《TapSDK 隐私政策》</a>。
+      </p>
+
+      <h3>2.3 可选的腾讯 RUM 错误诊断</h3>
+      <p>
+        为定位封闭测试中的崩溃和程序错误，我们会在您<strong>单独选择同意</strong>后动态加载腾讯前端性能监控（RUM）的 Aegis Web SDK。您可以拒绝，拒绝不会影响 TapTap 登录或正常游玩。
+      </p>
+      <p>启用后可能处理：</p>
+      <ul>
+        <li>JS、Promise 和程序主动上报的错误信息、错误堆栈；</li>
+        <li>有限的错误上下文，例如错误阶段、操作类型、重试次数和界面组件堆栈；</li>
+        <li>应用版本、测试环境、操作系统、网络类型、设备型号、浏览器/设备 UA、地区；</li>
+        <li>由 Aegis 在本地生成并保存的随机访客标识 AEGIS_ID，用于统计独立设备。</li>
+      </ul>
+      <p>
+        我们已关闭页面性能、Web Vitals、接口测速、接口详情、请求正文、资源测速、点击记录和控制台日志上报，也不会主动上报完整游戏存档或玩家输入内容。腾讯云公开说明显示，RUM 原始错误和日志通常保留 30 天，汇总指标可能保留 90 天。
+      </p>
+      <p>
+        该服务由腾讯科技（深圳）有限公司提供，境内版本使用中国境内上报节点。详见
+        <a href="https://cloud.tencent.com/document/product/248/87595" rel="noopener noreferrer">《前端性能监控 SDK 隐私保护协议》</a>。
+      </p>
+
+      <h3>2.4 协议网站访问日志</h3>
+      <p>
+        本协议网站由腾讯云 EdgeOne Makers 提供 HTTPS 静态托管。为传输页面、抵御攻击和保障可用性，托管服务可能自动处理 IP 地址、访问时间、请求地址、浏览器/设备 UA、网络与安全日志。我们不在这些页面中放置广告、分析脚本或自有 Cookie。
+      </p>
+
+      <h2>三、设备权限说明</h2>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>权限</th>
+              <th>用途</th>
+              <th>是否可关闭</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>访问网络（INTERNET）</td>
+              <td>TapTap 登录、实名认证/防沉迷、更新检查及经同意的错误诊断</td>
+              <td>Android 基础网络能力；断网时相关在线功能不可用</td>
+            </tr>
+            <tr>
+              <td>获取网络状态（ACCESS_NETWORK_STATE）</td>
+              <td>判断网络是否有效，处理登录、认证与更新错误</td>
+              <td>系统普通权限，不读取网络内容</td>
+            </tr>
+            <tr>
+              <td>请求安装应用（REQUEST_INSTALL_PACKAGES）</td>
+              <td>在需要更新或安装 TapTap 客户端时进入系统确认流程</td>
+              <td>安装仍需您的系统确认；可在系统设置中关闭来源授权</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        当前测试包不申请定位、通讯录、短信、通话记录、相机、麦克风或电话状态权限。Android 的应用可见性声明仅用于查询 TapTap 国内版或国际版是否安装，不用于扫描完整应用列表。
+      </p>
+
+      <h2>四、第三方服务清单</h2>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>第三方</th>
+              <th>功能</th>
+              <th>启用条件</th>
+              <th>隐私文件</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>易玩（上海）网络科技有限公司 / TapSDK</td>
+              <td>TapTap 登录、实名认证/防沉迷、更新唤起</td>
+              <td>您同意本政策后；Android 测试包必需</td>
+              <td><a href="https://developer.taptap.cn/docs/sdk/start/agreement/" rel="noopener noreferrer">TapSDK 隐私政策</a></td>
+            </tr>
+            <tr>
+              <td>腾讯科技（深圳）有限公司 / 腾讯 RUM Aegis SDK</td>
+              <td>测试错误收集与故障定位</td>
+              <td>您另行选择同意后才启用</td>
+              <td><a href="https://cloud.tencent.com/document/product/248/87595" rel="noopener noreferrer">SDK 隐私保护协议</a></td>
+            </tr>
+            <tr>
+              <td>腾讯云 / EdgeOne Makers</td>
+              <td>本协议网站 HTTPS 托管、安全防护与访问传输</td>
+              <td>访问本协议网站时</td>
+              <td><a href="https://cloud.tencent.com/document/product/1552" rel="noopener noreferrer">EdgeOne 产品文档</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        当前封闭测试版本未接入第三方广告 SDK、支付 SDK、社交分享 SDK或云存档 SDK。后续如新增，我们会在启用前更新本政策，并依法重新征求同意。
+      </p>
+
+      <h2>五、信息共享、转让与公开披露</h2>
+      <p>
+        除本政策已说明的第三方 SDK 处理、取得您的单独同意或法律法规另有要求外，我们不会出售、出租或向其他第三方提供您的个人信息。
+      </p>
+      <p>
+        如发生合并、分立、资产转让或运营主体变更并涉及个人信息转移，我们将依法告知接收方信息并要求其继续履行个人信息保护义务。
+      </p>
+
+      <h2>六、信息存储与保护</h2>
+      <ol>
+        <li>游戏业务存档、随机本地设备标识和同意记录保存在您的设备本地，直至您清除应用数据或卸载应用。</li>
+        <li>TapSDK 与腾讯 RUM 处理的信息由相应服务商按其隐私文件保存和保护；当前配置使用中国境内服务节点。</li>
+        <li>我们采用最小权限、访问控制、HTTPS 传输、限制日志字段等措施降低风险，但任何技术均无法保证绝对安全。</li>
+        <li>发生可能影响您权益的个人信息安全事件时，我们会依法采取补救措施并以合理方式告知。</li>
+      </ol>
+
+      <h2>七、您的权利</h2>
+      <p>您依法享有查阅、复制、更正、补充、删除个人信息，以及撤回同意、投诉和要求解释本政策等权利。您可以：</p>
+      <ul>
+        <li>在游戏常驻“协议与隐私”入口撤回应用隐私同意；撤回后游戏会保存当前本地进度并退出，下次重新同意前不会初始化 TapSDK；</li>
+        <li>在可选诊断提示中拒绝远程诊断；已同意后如需撤回，可通过下方邮箱联系我们，或清除应用数据以重置本地同意记录；</li>
+        <li>通过系统设置清除应用数据或卸载应用，删除本地存档、本地设备标识和同意记录；</li>
+        <li>涉及 TapTap 账号、实名或 SDK 数据的请求，可同时依据 TapSDK 隐私政策向 TapTap 提出；</li>
+        <li>通过下方邮箱向我们提出个人信息相关请求。为保障安全，我们可能要求您提供必要信息核验身份。</li>
+      </ul>
+      <p>撤回同意不影响撤回前基于同意已经进行的信息处理。</p>
+
+      <h2>八、未成年人保护</h2>
+      <p>
+        未成年人应在监护人指导下阅读本政策并使用游戏。未满 14 周岁的儿童应取得监护人同意后使用。我们通过 TapTap 合规认证落实实名认证和防沉迷限制，不直接获取或保存儿童的真实姓名、身份证号码。
+      </p>
+      <p>
+        如果监护人认为我们不当处理了未成年人的信息，请通过下方方式联系我们。核实后，我们将依法采取限制、删除或其他必要措施。
+      </p>
+
+      <h2>九、政策更新</h2>
+      <p>
+        当游戏功能、第三方 SDK、处理目的或适用法律发生变化时，我们可能更新本政策。发生重大变化时，我们会通过游戏弹窗、测试平台公告或其他合理方式提示；依法需要重新取得同意的，我们会在继续处理前再次征求您的同意。
+      </p>
+
+      <h2>十、联系我们</h2>
+      <p>
+        个人信息处理者：拾一工作室<br />
+        适用产品：《我的末世废土基地》<br />
+        联系邮箱：<a href="mailto:2535189010@qq.com">2535189010@qq.com</a>
+      </p>
+      <p>
+        我们通常会在收到请求并完成必要身份核验后十五个工作日内答复；法律法规另有规定的，从其规定。
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      © 2026 拾一工作室 · <a href="../terms/">查看用户协议</a>
+    </footer>
+  </body>
+</html>
+
